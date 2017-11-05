@@ -32,13 +32,20 @@
           <p class="metrics-name">
             Американские и британские единицы
           </p>
-          
+            <div class="flexbox dimension" *ngFor="let dimension of usaDimensions">
+              <p class="regularP">{{ dimension.name }}</p>
+              <input type="number" value="{{ dimension.relToGram }}"/>
+            </div>
             <button class="convert-button">Конвертировать</button>
         </div>
         <div class="flexbox metric">
           <p class="metrics-name">
             Европейские единицы
           </p>
+          <div class="flexbox dimension" *ngFor="let dimension of euroDimensions">
+            <p class="regularP">{{ dimension.name }}</p>
+            <input type="number" value="{{ dimension.relToGram }}"/>
+          </div>
             <button class="convert-button">Конвертировать</button>
         </div>
         

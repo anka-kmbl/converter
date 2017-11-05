@@ -71,9 +71,21 @@ box-sizing: border-box;
 	width: 50%;
 	padding: 2%;
 	margin: 2%;
+	flex-direction: column;
 }
 
 
 .hide {
 	display: none;
+}
+
+.regularP {
+	margin: 2%;
+	padding: 2%;
+	width: 35%;
+}
+
+.dimension {
+	width: 95%;
+
 }
